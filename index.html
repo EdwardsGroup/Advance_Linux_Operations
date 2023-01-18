@@ -1,13 +1,36 @@
-# Advance_Linux_Operations
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPCs tutorial - Edwards</title>
+    <link rel="stylesheet" href = "styles.css">
 </head>
 <body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
+    <div class="contanier">
+        <img src="menu.png" class="menu-icon" onclick="openmenu()">
+        <div class = "menu-box" id="menu">
+            <div class = "right-links">
+                <a href = "#"> Get Started</a>
+                <img src="close.png" onclick="closemenu()">
+            </div>
+            <div class="menu-links">
+                <a href="sherlck.html">Login on Sherlock</a>
+                <a href="#">About Us</a>
+                <a href="#">Our Services</a>
+                <a href="#">Products</a>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </div>
+<script>
+var menu = document.getElementById("menu");
+function closemenu(){
+    menu.style.top = "-100vh";
+}
+function openmenu(){
+    menu.style.top = "17%";
+}
+</script>
 </body>
 </html>
